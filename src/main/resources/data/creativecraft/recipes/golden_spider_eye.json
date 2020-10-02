@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "WAW",
+    "WWW"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:gold_nugget"
+    },
+    "A": {
+      "item": "minecraft:spider_eye"
+    }
+  },
+  "result": {
+    "item": "creativecraft:golden_spider_eye",
+    "count": 1
+  }
+}

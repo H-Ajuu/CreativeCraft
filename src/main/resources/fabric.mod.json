@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "creativecraft",
+  "version": "${version}",
+
+  "name": "Creative Craft",
+  "description": "There are intesting creative craft!",
+  "authors": [
+    "H_Ajuu"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/creativecraft/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.fabricmc.ajuu.CreativeCraft"
+    ]
+  },
+  "mixins": [
+    "modid.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}

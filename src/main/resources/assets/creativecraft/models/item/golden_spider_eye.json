@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "creativecraft:item/golden_spider_eye"
+  }
+}
