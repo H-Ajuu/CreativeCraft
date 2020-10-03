@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:string"
+    },
+    [
+      {
+        "item": "minecraft:oak_leaves"
+      },
+      {
+        "item": "minecraft:dark_oak_leaves"
+      }
+    ],
+    [
+      {
+        "item": "minecraft:oak_leaves"
+      },
+      {
+        "item": "minecraft:dark_oak_leaves"
+      }
+    ],
+    [
+      {
+        "item": "minecraft:oak_leaves"
+      },
+      {
+        "item": "minecraft:dark_oak_leaves"
+      }
+    ],
+    [
+      {
+        "item": "minecraft:oak_leaves"
+      },
+      {
+        "item": "minecraft:dark_oak_leaves"
+      }
+    ]
+  ],
+  "result": {
+    "item": "creativecraft:apple_branch_bundle",
+    "count": 1
+  }
+}

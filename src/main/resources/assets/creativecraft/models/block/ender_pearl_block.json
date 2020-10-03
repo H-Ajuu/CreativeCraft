@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "creativecraft:block/ender_pearl_block"
+  }
+}
