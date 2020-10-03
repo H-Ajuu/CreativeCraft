@@ -42,6 +42,7 @@ public class CreativeCraft implements ModInitializer {
 	//创建附魔书对象
 	public static final OffensiveBlessingEnchantment OFFENSIVE_BLESSING_ENCHANTMENT=new OffensiveBlessingEnchantment(Enchantment.Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[] {EquipmentSlot.MAINHAND});
 	public static final DefensiveBlessingEnchantment DEFENSIVE_BLESSING_ENCHANTMENT=new DefensiveBlessingEnchantment(Enchantment.Rarity.RARE, EnchantmentTarget.ARMOR, new EquipmentSlot[] {EquipmentSlot.HEAD,EquipmentSlot.CHEST,EquipmentSlot.LEGS,EquipmentSlot.FEET});
+
 	/*----------注册模组道具----------*/
 	//注册物品
 	public void registerItems() {
@@ -68,6 +69,7 @@ public class CreativeCraft implements ModInitializer {
 		Registry.register(Registry.ENCHANTMENT,new Identifier(MODID,"offensive_blessing_enchantment"),OFFENSIVE_BLESSING_ENCHANTMENT);
 		Registry.register(Registry.ENCHANTMENT,new Identifier(MODID,"defensive_blessing_enchantment"),DEFENSIVE_BLESSING_ENCHANTMENT);
 	}
+
 	/*----------初始化----------*/
 	@Override
 	public void onInitialize() {
