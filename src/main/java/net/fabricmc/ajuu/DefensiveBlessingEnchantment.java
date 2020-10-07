@@ -19,14 +19,19 @@ public class DefensiveBlessingEnchantment extends Enchantment {
     }
 
     @Override
+    public int getMinPower(int level) {
+        return 15;
+    }
+
+    @Override
     public void onUserDamaged(LivingEntity user, Entity attacker, int level) {
         if(attacker instanceof LivingEntity){
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION,60));
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE,60));
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE,60));
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING,60));
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY,60));
-            ((LivingEntity) attacker).addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING,60));
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION,60,0,false,false,false));
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE,60,0,false,false,false));
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE,60,0,false,false,false));
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING,60,0,false,false,false));
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY,60,0,false,false,false));
+            ((LivingEntity) attacker).addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING,60,0,false,false,false));
         }
     }
 }

@@ -19,14 +19,19 @@ public class OffensiveBlessingEnchantment extends Enchantment {
     }
 
     @Override
+    public int getMinPower(int level) {
+        return 15;
+    }
+
+    @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         if(target instanceof LivingEntity){
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST,60));
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED,60));
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH,60));
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION,60));
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.LUCK,60));
-            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING,60));
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST,60,0,false,false,false));
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED,60,0,false,false,false));
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH,60,0,false,false,false));
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION,60,0,false,false,false));
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.LUCK,60,0,false,false,false));
+            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING,60,0,false,false,false));
         }
     }
 }
