@@ -26,5 +26,6 @@
   "block.creativecraft.ender_pearl_block": "末影珍珠块",
   "block.creativecraft.ender_pearl_block.tooltip": "§7有概率掉落潜影壳，极小概率掉落龙首或龙蛋！",
   "enchantment.creativecraft.offensive_blessing_enchantment": "攻势祝福",
-  "enchantment.creativecraft.defensive_blessing_enchantment": "守势祝福"
+  "enchantment.creativecraft.defensive_blessing_enchantment": "守势祝福",
+  "item.creativecraft.proof_of_hero": "英雄之证"
 }

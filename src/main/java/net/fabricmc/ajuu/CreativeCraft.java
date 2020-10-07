@@ -37,12 +37,12 @@ public class CreativeCraft implements ModInitializer {
 	public static final OtherGoldenFood GOLDEN_PUMPKIN_PIE = new OtherGoldenFood("golden_pumpkin_pie",8,9.6F,StatusEffects.INVISIBILITY);
 	public static final OtherGoldenFood GOLDEN_SWEET_BERRIES = new OtherGoldenFood("golden_sweet_berries",2,0.8F,StatusEffects.JUMP_BOOST);
 	public static final OtherGoldenFood GOLDEN_SPIDER_EYE = new OtherGoldenFood("golden_spider_eye",2,6.4F,StatusEffects.NIGHT_VISION);
+	public static final ProofOfHero PROOF_OF_HERO = new ProofOfHero(new Item.Settings());
 	//创建方块对象
 	public static final EndePearlBlock ENDER_PEARL_BLOCK = new EndePearlBlock();
 	//创建附魔书对象
 	public static final OffensiveBlessingEnchantment OFFENSIVE_BLESSING_ENCHANTMENT=new OffensiveBlessingEnchantment(Enchantment.Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[] {EquipmentSlot.MAINHAND});
 	public static final DefensiveBlessingEnchantment DEFENSIVE_BLESSING_ENCHANTMENT=new DefensiveBlessingEnchantment(Enchantment.Rarity.RARE, EnchantmentTarget.ARMOR, new EquipmentSlot[] {EquipmentSlot.HEAD,EquipmentSlot.CHEST,EquipmentSlot.LEGS,EquipmentSlot.FEET});
-
 	/*----------注册模组道具----------*/
 	//注册物品
 	public void registerItems() {
@@ -58,6 +58,7 @@ public class CreativeCraft implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier(MODID,"golden_pumpkin_pie"),GOLDEN_PUMPKIN_PIE);
 		Registry.register(Registry.ITEM, new Identifier(MODID,"golden_sweet_berries"),GOLDEN_SWEET_BERRIES);
 		Registry.register(Registry.ITEM, new Identifier(MODID,"golden_spider_eye"),GOLDEN_SPIDER_EYE);
+		Registry.register(Registry.ITEM, new Identifier(MODID,"proof_of_hero"),PROOF_OF_HERO);
 	}
 	//注册方块及其方块物品
 	public void registerBlocks() {
