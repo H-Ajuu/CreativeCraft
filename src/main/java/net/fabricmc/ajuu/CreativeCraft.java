@@ -38,6 +38,7 @@ public class CreativeCraft implements ModInitializer {
 	public static final OtherGoldenFood GOLDEN_SWEET_BERRIES = new OtherGoldenFood("golden_sweet_berries",2,0.8F,StatusEffects.JUMP_BOOST);
 	public static final OtherGoldenFood GOLDEN_SPIDER_EYE = new OtherGoldenFood("golden_spider_eye",2,6.4F,StatusEffects.NIGHT_VISION);
 	public static final ProofOfHero PROOF_OF_HERO = new ProofOfHero(new Item.Settings());
+	public static final OminousOfSeal OMINOUS_OF_SEAL = new OminousOfSeal(new Item.Settings());
 	//创建方块对象
 	public static final EndePearlBlock ENDER_PEARL_BLOCK = new EndePearlBlock();
 	//创建附魔书对象
@@ -59,6 +60,7 @@ public class CreativeCraft implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier(MODID,"golden_sweet_berries"),GOLDEN_SWEET_BERRIES);
 		Registry.register(Registry.ITEM, new Identifier(MODID,"golden_spider_eye"),GOLDEN_SPIDER_EYE);
 		Registry.register(Registry.ITEM, new Identifier(MODID,"proof_of_hero"),PROOF_OF_HERO);
+		Registry.register(Registry.ITEM, new Identifier(MODID,"ominous_of_seal"),OMINOUS_OF_SEAL);
 	}
 	//注册方块及其方块物品
 	public void registerBlocks() {
