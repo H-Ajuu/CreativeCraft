@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bell"
+    },
+    {
+      "item": "minecraft:white_banner"
+    },
+    {
+      "item": "minecraft:iron_sword"
+    },
+    {
+      "item": "minecraft:bow"
+    },
+    {
+      "item": "minecraft:iron_block"
+    },
+    {
+      "item": "minecraft:poppy"
+    }
+  ],
+  "result": {
+    "item": "creativecraft:proof_of_hero",
+    "count": 1
+  }
+}
