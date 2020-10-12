@@ -7,6 +7,8 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 public class DefensiveBlessingEnchantment extends Enchantment {
     public DefensiveBlessingEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot[] slotTypes) {
@@ -34,4 +36,9 @@ public class DefensiveBlessingEnchantment extends Enchantment {
             ((LivingEntity) attacker).addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING,60,0,false,false,false));
         }
     }
+
+    public static void register(){
+        Registry.register(Registry.ENCHANTMENT,new Identifier(CreativeCraft.MODID,"defensive_blessing_enchantment"),DEFENSIVE_BLESSING_ENCHANTMENT);
+    }
+    public static final DefensiveBlessingEnchantment DEFENSIVE_BLESSING_ENCHANTMENT=new DefensiveBlessingEnchantment(Enchantment.Rarity.RARE, EnchantmentTarget.ARMOR, new EquipmentSlot[] {EquipmentSlot.HEAD,EquipmentSlot.CHEST,EquipmentSlot.LEGS,EquipmentSlot.FEET});
 }

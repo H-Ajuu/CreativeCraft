@@ -7,8 +7,10 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Hand;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.TypedActionResult;
+import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 
 public class ProofOfHero extends Item {
@@ -30,4 +32,9 @@ public class ProofOfHero extends Item {
         if(++level>4) level=0;
         return TypedActionResult.success(user.getStackInHand(hand));
     }
+
+    public static void register(){
+        Registry.register(Registry.ITEM, new Identifier(CreativeCraft.MODID,"proof_of_hero"),PROOF_OF_HERO);
+    }
+    public static final ProofOfHero PROOF_OF_HERO = new ProofOfHero(new Item.Settings());
 }

@@ -7,8 +7,10 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Hand;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.TypedActionResult;
+import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 
 public class OminousOfSeal extends Item{
@@ -30,4 +32,9 @@ public class OminousOfSeal extends Item{
         if(++level>4) level=0;
         return TypedActionResult.success(user.getStackInHand(hand));
     }
+
+    public  static void register(){
+        Registry.register(Registry.ITEM, new Identifier(CreativeCraft.MODID,"ominous_of_seal"),OMINOUS_OF_SEAL);
+    }
+    public static final OminousOfSeal OMINOUS_OF_SEAL = new OminousOfSeal(new Item.Settings());
 }

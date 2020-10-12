@@ -7,6 +7,8 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 public class OffensiveBlessingEnchantment extends Enchantment {
     public OffensiveBlessingEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot[] slotTypes) {
@@ -34,4 +36,9 @@ public class OffensiveBlessingEnchantment extends Enchantment {
             ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING,60,0,false,false,false));
         }
     }
+
+    public static void register(){
+        Registry.register(Registry.ENCHANTMENT,new Identifier(CreativeCraft.MODID,"offensive_blessing_enchantment"),OFFENSIVE_BLESSING_ENCHANTMENT);
+    }
+    public static final OffensiveBlessingEnchantment OFFENSIVE_BLESSING_ENCHANTMENT=new OffensiveBlessingEnchantment(Enchantment.Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[] {EquipmentSlot.MAINHAND});
 }
