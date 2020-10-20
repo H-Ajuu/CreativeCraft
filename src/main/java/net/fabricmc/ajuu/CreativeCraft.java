@@ -45,6 +45,7 @@ public class CreativeCraft implements ModInitializer {
 		DefensiveBlessingEnchantment.register();
 		ProofOfHero.register();
 		OminousOfSeal.register();
+		EndlessWaterBucket.register();
 
 		//System.out.println("Hello Fabric world!");
 	}
