@@ -3,9 +3,6 @@ package net.fabricmc.ajuu;
 //import com.sun.xml.internal.ws.api.config.management.policy.ManagementAssertion;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.EnchantmentTarget;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
@@ -40,12 +37,13 @@ public class CreativeCraft implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier(MODID,"apple_branch_bundle"),APPLE_BRANCH_BUNDLE);
 		Registry.register(Registry.ITEM, new Identifier(MODID,"inlay_golden_apple"),INLAY_GOLDEN_APPLE);
 		OtherGoldenFood.register();
-		EndePearlBlock.register();
+		EnderPearlBlock.register();
 		OffensiveBlessingEnchantment.register();
 		DefensiveBlessingEnchantment.register();
 		ProofOfHero.register();
 		OminousOfSeal.register();
 		EndlessWaterBucket.register();
+		EndlessLavaBucket.register();
 
 		//System.out.println("Hello Fabric world!");
 	}

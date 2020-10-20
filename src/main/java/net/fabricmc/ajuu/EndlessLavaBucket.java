@@ -8,9 +8,9 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class EndlessWaterBucket extends BucketItem {
-    public EndlessWaterBucket(Settings settings) {
-        super(Fluids.WATER, settings.group(CreativeCraft.CREATIVE_CRAFT_GROUP).maxCount(1));
+public class EndlessLavaBucket extends BucketItem {
+    public EndlessLavaBucket(Settings settings) {
+        super(Fluids.LAVA, settings.group(CreativeCraft.CREATIVE_CRAFT_GROUP).maxCount(1));
     }
 
     @Override
@@ -19,7 +19,7 @@ public class EndlessWaterBucket extends BucketItem {
     }
 
     public static void register(){
-        Registry.register(Registry.ITEM, new Identifier(CreativeCraft.MODID,"endless_water_bucket"),ENDLESS_WATER_BUCKET);
+        Registry.register(Registry.ITEM, new Identifier(CreativeCraft.MODID,"endless_lava_bucket"),ENDLESS_LAVA_BUCKET);
     }
-    public static final EndlessWaterBucket ENDLESS_WATER_BUCKET = new EndlessWaterBucket(new Item.Settings());
+    public static final EndlessLavaBucket ENDLESS_LAVA_BUCKET = new EndlessLavaBucket(new Item.Settings());
 }
