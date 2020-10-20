@@ -17,8 +17,8 @@ import net.minecraft.world.BlockView;
 
 import java.util.List;
 
-public class EndePearlBlock extends Block {
-    public EndePearlBlock(){
+public class EnderPearlBlock extends Block {
+    public EnderPearlBlock(){
         super(FabricBlockSettings.of(Material.SPONGE)
                 .breakByHand(true)
                 .breakByTool(FabricToolTags.HOES)
@@ -36,5 +36,5 @@ public class EndePearlBlock extends Block {
         Registry.register(Registry.BLOCK, new Identifier(CreativeCraft.MODID, "ender_pearl_block"), ENDER_PEARL_BLOCK);//注册方块
         Registry.register(Registry.ITEM, new Identifier(CreativeCraft.MODID, "ender_pearl_block"), new BlockItem(ENDER_PEARL_BLOCK, new Item.Settings().group(CreativeCraft.CREATIVE_CRAFT_GROUP)));
     }
-    public static final EndePearlBlock ENDER_PEARL_BLOCK = new EndePearlBlock();
+    public static final EnderPearlBlock ENDER_PEARL_BLOCK = new EnderPearlBlock();
 }
