@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     " B ",
-    "STS"
+    "SFS"
   ],
   "key": {
     "B": {
       "item": "minecraft:magma_block"
     },
-    "T": {
+    "F": {
       "item": "minecraft:lava_bucket"
     },
     "S": {

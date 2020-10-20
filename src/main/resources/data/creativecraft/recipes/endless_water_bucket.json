@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     " B ",
-    "STS"
+    "SFS"
   ],
   "key": {
     "B": {
-      "item": "minecraft:sponge"
+      "item": "minecraft:wet_sponge"
     },
-    "T": {
+    "F": {
       "item": "minecraft:water_bucket"
     },
     "S": {
