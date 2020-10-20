@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "STS"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:magma_block"
+    },
+    "T": {
+      "item": "minecraft:lava_bucket"
+    },
+    "S": {
+      "item": "minecraft:shulker_shell"
+    }
+  },
+  "result": {
+    "item": "creativecraft:endless_lava_bucket",
+    "count": 1
+  }
+}
